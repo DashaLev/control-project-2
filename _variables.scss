@@ -1,0 +1,87 @@
+$center:center;
+$maincolor:#4e26fd;
+
+@mixin flex($value) {
+    display: flex;
+    justify-content: $value;
+    align-items:center;
+}
+@mixin box($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+@mixin linkMenuA($value:black) {
+    text-decoration: none;
+    display: block;
+    color: $value;
+    font-size: 20px; 
+}
+@mixin hoverMenuA() {
+    border:2px solid $maincolor;
+}
+@mixin buttonMore() {
+    background-color: transparent;
+    border:3px solid $maincolor;
+    color: $maincolor;
+    outline: transparent;
+    font-weight: bold;
+}
+@mixin descriptionText($value:16px) {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 5px 10px 10px;
+    font-size: $value;
+}
+@mixin cardTitle($value:18px) {
+    font-size: $value;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+@mixin title($value:40px) {
+    font-size: $value;
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align: center;
+}
+@mixin footerContInfo() {
+    @include box (max-content,20px);
+    line-height: 20px;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+@mixin cardBorder() {
+    border-bottom:1px solid rgb(224, 217, 217);
+    border-top:1px solid rgb(224, 217, 217);
+}
+
+@mixin background-transition($initial, $hover, $inversed: false) {
+    background: linear-gradient(
+      90deg,
+      $hover 0%,
+      $hover 50%,
+      $initial 50%,
+      $initial 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+  
+    background-position: right bottom;
+    @if $inversed {
+      background-position: left bottom;
+    }
+    transition: background-position 0.35s ease-out;
+  
+    &:hover {
+      background-position: left bottom;
+      @if $inversed {
+        background-position: right bottom;
+      }
+    }
+  }
+@mixin bgImage() {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
