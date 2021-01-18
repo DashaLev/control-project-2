@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 .header {
@@ -46,7 +46,8 @@ body {
         a {
            @include linkMenuA(black);
            @include box(max-content, 30px);
-           line-height: 30px; 
+           line-height: 30px;
+           font-size: 18px; 
         }
         &:hover  {
             @include hoverMenuA();
@@ -56,7 +57,7 @@ body {
 }
 
 .section-title {
-    @include title();
+    @include title(30px);
 }
 
 .section-title:after {
@@ -74,7 +75,7 @@ body {
     @include bgImage();
     padding: 80px 20px;
     color: white;
-    font-size: 40px;
+    font-size: 29px;
 }
 .about-us-info-detail {
     font-family: "Open Sans", sans-serif;
@@ -193,6 +194,13 @@ body {
     }
     
 } 
+.menu {
+    li {
+        a {
+            font-size: 16px; 
+        }
+    }
+}
 .social-networks {
     color: white;
     text-align: center;
@@ -367,9 +375,9 @@ body {
         li {
             margin-bottom: 15px;
             a {
-                height: 40px;
-                font-size: 30px;
-                line-height: 40px;
+                height: 30px;
+                font-size: 20px;
+                line-height: 30px;
             }
         }
     }
@@ -383,8 +391,8 @@ body {
         max-width: 720px;
     }
     .tagline {
-       padding:200px 90px;
-       font-size: 50px;
+       padding:170px 80px;
+       font-size: 40px;
     }
     .teem {
         padding: 80px 80px 80px 100px;

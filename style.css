@@ -246,7 +246,7 @@
 }
 
 body {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Yusei Magic", sans-serif;
 }
 
 .header {
@@ -294,17 +294,17 @@ body {
   text-decoration: none;
   display: block;
   color: black;
-  font-size: 20px;
   width: max-content;
   height: 30px;
   line-height: 30px;
+  font-size: 18px;
 }
 .menu li:hover {
   border: 2px solid #4e26fd;
 }
 
 .section-title {
-  font-size: 40px;
+  font-size: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -327,7 +327,7 @@ body {
   background-size: cover;
   padding: 80px 20px;
   color: white;
-  font-size: 40px;
+  font-size: 29px;
 }
 
 .about-us-info-detail {
@@ -464,6 +464,10 @@ body {
   padding-left: 25px;
   margin-bottom: 5px;
   background: url(images/location_icon.png) no-repeat;
+}
+
+.menu li a {
+  font-size: 16px;
 }
 
 .social-networks {
@@ -647,9 +651,9 @@ body {
     margin-bottom: 15px;
   }
   .menu li a {
-    height: 40px;
-    font-size: 30px;
-    line-height: 40px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -658,8 +662,8 @@ body {
   }
 
   .tagline {
-    padding: 200px 90px;
-    font-size: 50px;
+    padding: 170px 80px;
+    font-size: 40px;
   }
 
   .teem {
@@ -686,7 +690,6 @@ body {
     text-decoration: none;
     display: block;
     color: white;
-    font-size: 20px;
     width: max-content;
     height: 30px;
     line-height: 30px;
