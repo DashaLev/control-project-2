@@ -11,9 +11,6 @@ body {
 
 .header {
     padding: 15px 10px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
     background-color: white;
     border-bottom: 3px solid #4e26fd;
 }
@@ -42,7 +39,8 @@ body {
 
     li {
         border: 2px solid transparent;
-        padding: 0 4px;
+        padding: 5px;
+        margin: 5px;
 
         a {
            @include linkMenuA(black);
@@ -195,13 +193,7 @@ body {
     }
     
 } 
-.menu {
-    li {
-        a {
-            font-size: 16px; 
-        }
-    }
-}
+
 .social-networks {
     color: white;
     text-align: center;
@@ -416,7 +408,8 @@ body {
             a {
               @include linkMenuA(white);
               @include box(max-content, 30px);
-              line-height: 30px; 
+              line-height: 30px;
+              font-size: 16px;
             }
             &:hover {
                 border-color: $maincolor;
@@ -438,6 +431,9 @@ body {
     }
     .social-networks {
         padding:0 0 15px 10px;
+    }
+    .tagline {
+        padding:250px 80px;
     }
 } 
 

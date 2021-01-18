@@ -251,9 +251,6 @@ body {
 
 .header {
   padding: 15px 10px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
   background-color: white;
   border-bottom: 3px solid #4e26fd;
 }
@@ -289,7 +286,8 @@ body {
 }
 .menu li {
   border: 2px solid transparent;
-  padding: 0 4px;
+  padding: 5px;
+  margin: 5px;
 }
 .menu li a {
   text-decoration: none;
@@ -465,10 +463,6 @@ body {
   padding-left: 25px;
   margin-bottom: 5px;
   background: url(images/location_icon.png) no-repeat;
-}
-
-.menu li a {
-  font-size: 16px;
 }
 
 .social-networks {
@@ -694,6 +688,7 @@ body {
     width: max-content;
     height: 30px;
     line-height: 30px;
+    font-size: 16px;
   }
   .menu-footer li:hover {
     border-color: #4e26fd;
@@ -711,6 +706,10 @@ body {
 
   .social-networks {
     padding: 0 0 15px 10px;
+  }
+
+  .tagline {
+    padding: 250px 80px;
   }
 }
 @media (min-width: 1200px) {
