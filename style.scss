@@ -97,16 +97,20 @@ body {
 [class*="our-value-"] {
     display: flex;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    text-align: center;
     font-size: 25px;
     color: white;
     padding: 15px;
-    text-align: center;
-    margin: 15px;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.8s;
 }
 .our-value-first {
-    background-color: #00a698;
+    background-color: #00a698;  
 }
 .our-value-second {
     background-color: #ff9400;
@@ -117,6 +121,17 @@ body {
 .our-value-fourht {
     background-color: #5a489b;
 }
+
+[class*="bg-square-"] {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: $maincolor;
+    position: relative;
+    transition: transform 0.8s;
+    margin: 15px;
+}
+
 
 .teem {
     background: url(images/our_team_icon.png);
@@ -319,7 +334,7 @@ body {
     .header {
         position: sticky;
         top:0;
-        z-index: 30;
+        z-index: 120;
     }
     
     .string {
@@ -492,6 +507,11 @@ body {
         .string {
             display: flex;
             justify-content: center;
+        }
+    }
+    [class*="our-value-"] {
+        &:hover {
+            transform: translate(20px, 20px);
         }
     }
 }
