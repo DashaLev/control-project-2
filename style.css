@@ -280,6 +280,10 @@ body {
   justify-content: space-between;
 }
 
+.flex-center {
+  justify-content: center;
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -551,10 +555,18 @@ body {
   display: block;
 }
 
+.tab-box {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border-bottom: 4px solid #e5e6e6;
+}
+
 .tab-flex-container {
   display: flex;
   background-color: #303F9F;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .tab-container {
